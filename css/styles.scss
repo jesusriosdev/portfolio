@@ -1,0 +1,405 @@
+/***********************************************************************************************/
+/* COLOR VARIABLES AND IMPORTS */
+/***********************************************************************************************/
+
+$background-body: #242629;
+
+$background-dark: #000;
+$background-semidark: #222;
+$background-gray: #808080;
+$background-light: #fff;
+$background-semilight: #f5f5f5;
+
+$text-dark: #000;
+$text-semidark: #222;
+$text-gray: #808080;
+$text-light: #fff;
+$text-semilight: #f5f5f5;
+
+$background-btn-primary: #0056b3;
+$background-btn-success: #28a745;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap');
+
+/***********************************************************************************************/
+/* COLOR VARIABLES AND IMPORTS */
+/***********************************************************************************************/
+
+
+/***********************************************************************************************/
+/* MIXINS */
+/***********************************************************************************************/
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+@mixin zero-margin-four($pad-up, $pad-right, $pad-down, $pad-left) {
+    margin: 0px auto;
+    padding: $pad-up $pad-right $pad-down $pad-left;
+}
+
+/***********************************************************************************************/
+/* MIXINS */
+/***********************************************************************************************/
+
+/***********************************************************************************************/
+/* MAIN SECTIONS */
+/***********************************************************************************************/
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+}
+
+body {
+    background-color: #101010;
+    color: $text-light;
+    font-family: 'Montserrat', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.7rem;
+    line-height: 1.9 !important;
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.jumbotron {
+    @include zero-margin(170px, 15px);
+
+    background-image: url("../img/tech4.jpg");
+    background-size: cover;
+        
+    .row-header {
+        @include zero-margin(80px, 0px);
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+
+    .spanDarkBackground {
+        box-shadow: 0px 0px 8px #000;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.aboutme {
+    @include zero-margin-four(60px, 0px, 0px, 0px);
+    font-size: 1.5rem;
+
+    h1 {
+        font-weight: 700;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+.portfolio {
+    @include zero-margin-four(60px, 0px, 0px, 0px);
+    font-size: 1.5rem;
+
+    h1 {
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 700;
+        margin-top: 1rem !important
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    
+    p {
+        margin-top: 1.5rem !important
+    }
+    .row-content {
+        @include zero-margin(40px, 0px);
+    }
+}
+
+.contact {
+    @include zero-margin-four(60px, 0px, 0px, 0px);
+    font-size: 1.5rem;
+
+    h1 {
+        font-weight: 700;
+    }
+    a {
+        color: $text-gray;
+    }
+    a:hover {
+        color: $text-light;
+    }
+}
+
+footer {
+    @include zero-margin(20px, 0px);
+
+    background-color: #000000;
+    color: $text-light;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+
+    li {
+        @include zero-margin(5px, 0px);
+    }
+    a {
+        color: $text-gray;
+    }
+    a:hover {
+        color: $text-light;
+    }
+}
+
+/***********************************************************************************************/
+/* MAIN SECTIONS */
+/***********************************************************************************************/
+
+
+/***********************************************************************************************/
+/* NAVIGATION */
+/***********************************************************************************************/
+
+.navbar-dark {
+    @include zero-margin(0px, 0px);
+
+    background-color: #000000;
+    font-size: 1.2rem;
+
+    .navbar-toggler {
+        color: rgba(255,255,255,.5);
+        border-color: transparent;
+    }
+
+    .navbar-toggler:focus, .navbar-toggler:active {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        @include zero-margin(10px, 5px);
+
+        text-align: center;
+        text-transform: uppercase;
+    
+        a {
+            border-bottom: 2px solid transparent;
+            color: $text-light !important;
+            padding-right: 15px !important;
+            padding-left: 15px !important;
+        }
+        a:hover {
+            border-bottom: 2px solid $background-btn-primary;
+            color: $text-dark;
+        }
+    }
+
+    .show {
+        .navbar-nav {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+/***********************************************************************************************/
+/* NAVIGATION */
+/***********************************************************************************************/
+
+
+/***********************************************************************************************/
+/* MODALS */
+/***********************************************************************************************/
+
+.modal-content {
+
+    .modal-header {
+        background: $background-dark;
+
+        h4, button {
+            color: $background-light;
+        }
+        
+    }
+    .modal-body {
+        background: $background-body;
+    }
+}
+
+/***********************************************************************************************/
+/* MODALS */
+/***********************************************************************************************/
+
+
+/***********************************************************************************************/
+/* ROWS */
+/***********************************************************************************************/
+
+.row-header {
+    @include zero-margin(20px, 0px);
+}
+.row-content {
+    @include zero-margin(10px, 0px);
+    min-height: 250px;
+}
+.row-content-border {
+    border-bottom: 1px ridge;
+    border-top: 1px ridge;
+}
+
+/***********************************************************************************************/
+/* ROWS */
+/***********************************************************************************************/
+
+
+/***********************************************************************************************/
+/* BUTTONS */
+/***********************************************************************************************/
+
+
+// #btnViewResume {
+//     border-bottom: none !important;
+//     border-radius: 20px;
+//     min-width: 125px;
+// }
+// #btnViewResume:hover {
+//     border-bottom: none !important;
+//     background: $background-btn-primary;
+//     font-weight: 700;
+//     text-decoration: none !important;
+// }   
+
+a.btn-dark-custom {
+    background: #000;
+    //border-bottom: none !important;
+    border: 1px solid $background-light;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    min-width: 125px;
+    padding: 1.1rem 4rem;
+}
+a.btn-dark-custom:hover {
+    background: $background-btn-primary;
+    //border-bottom: none !important;
+    border: 1px solid $background-btn-primary;
+    color: $text-light !important;
+    font-weight: 700;
+    text-decoration: none !important;
+}  
+
+.scrollToTop {
+    background-color: $background-btn-primary;
+    bottom: 51px;
+    border-radius: 50px;
+    color: $text-light;
+    cursor: pointer;
+    display: none;
+    height: 50px;
+    position: fixed;
+    right: 29px;
+    text-align: center;
+    width: 50px;
+    z-index: 1005;
+
+    i {
+        line-height: 50px;
+    }
+}
+
+/***********************************************************************************************/
+/* BUTTONS */
+/***********************************************************************************************/
+
+
+/***********************************************************************************************/
+/* ELEMENT STYLES */
+/***********************************************************************************************/
+
+a {
+    color: $text-light !important;
+    cursor: pointer !important;
+}
+a:hover {
+    color: $background-btn-primary !important;
+}
+
+img {
+    border-radius: 2%;
+    display: block;
+    max-width: 100%;
+}
+
+/***********************************************************************************************/
+/* ELEMENT STYLES */
+/***********************************************************************************************/
+  
+/***********************************************************************************************/
+/* BURGUER ICON */
+/***********************************************************************************************/
+
+.brgr-box {
+    height: 20px;
+    display: inline-block;
+    position: relative; 
+    width: 30px;
+
+    .brgr-inner {
+        display: block;
+        margin-top: -2px; 
+        top: 50%;
+    }
+    .brgr-inner, .brgr-inner::before, .brgr-inner::after {
+        background-color: #fff;
+        border-radius: 4px;
+        height: 2px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease; 
+        width: 30px;
+    }
+    .brgr-inner::before, .brgr-inner::after {
+        content: "";
+        display: block; 
+    }
+    .brgr-inner::before {
+        top: -10px; 
+    }
+    .brgr-inner::after {
+        bottom: -10px; 
+    }
+}
+.brgr-action .brgr-inner {
+    top: 2px; 
+}
+.brgr-action .brgr-inner::before {
+    top: 10px;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.15s; 
+}
+.brgr-action .brgr-inner::after {
+    top: 20px; 
+}
+.brgr-action.is-active .brgr-inner {
+    transform: translate3d(0, 10px, 0) rotate(45deg); 
+}
+.brgr-action.is-active .brgr-inner::before {
+    opacity: 0; 
+    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+}
+.brgr-action.is-active .brgr-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-90deg); 
+}
+
+/***********************************************************************************************/
+/* BURGUER ICON */
+/***********************************************************************************************/

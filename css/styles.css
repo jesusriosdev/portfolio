@@ -1,0 +1,279 @@
+/***********************************************************************************************/
+/* COLOR VARIABLES AND IMPORTS */
+/***********************************************************************************************/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap");
+/***********************************************************************************************/
+/* COLOR VARIABLES AND IMPORTS */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* MIXINS */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* MIXINS */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* MAIN SECTIONS */
+/***********************************************************************************************/
+html {
+  font-size: 62.5%;
+  line-height: 1.15; }
+
+body {
+  background-color: #101010;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.7rem;
+  line-height: 1.9 !important;
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 170px 15px;
+  background-image: url("../img/tech4.jpg");
+  background-size: cover; }
+  .jumbotron .row-header {
+    margin: 0px auto;
+    padding: 80px 0px; }
+  .jumbotron h1 {
+    font-size: 5rem; }
+  .jumbotron h4 {
+    font-size: 2rem; }
+  .jumbotron .spanDarkBackground {
+    box-shadow: 0px 0px 8px #000;
+    background: rgba(0, 0, 0, 0.7); }
+
+.aboutme {
+  margin: 0px auto;
+  padding: 60px 0px 0px 0px;
+  font-size: 1.5rem; }
+  .aboutme h1 {
+    font-weight: 700; }
+  .aboutme p {
+    margin-bottom: 2rem; }
+
+.portfolio {
+  margin: 0px auto;
+  padding: 60px 0px 0px 0px;
+  font-size: 1.5rem; }
+  .portfolio h1 {
+    font-weight: 700; }
+  .portfolio h2 {
+    font-size: 2.5rem; }
+  .portfolio h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 1rem !important; }
+  .portfolio h4 {
+    font-size: 2rem; }
+  .portfolio p {
+    margin-top: 1.5rem !important; }
+  .portfolio .row-content {
+    margin: 0px auto;
+    padding: 40px 0px; }
+
+.contact {
+  margin: 0px auto;
+  padding: 60px 0px 0px 0px;
+  font-size: 1.5rem; }
+  .contact h1 {
+    font-weight: 700; }
+  .contact a {
+    color: #808080; }
+  .contact a:hover {
+    color: #fff; }
+
+footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+  footer li {
+    margin: 0px auto;
+    padding: 5px 0px; }
+  footer a {
+    color: #808080; }
+  footer a:hover {
+    color: #fff; }
+
+/***********************************************************************************************/
+/* MAIN SECTIONS */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* NAVIGATION */
+/***********************************************************************************************/
+.navbar-dark {
+  margin: 0px auto;
+  padding: 0px 0px;
+  background-color: #000000;
+  font-size: 1.2rem; }
+  .navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: transparent; }
+  .navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:active {
+    outline: none;
+    box-shadow: none; }
+  .navbar-dark .nav-item {
+    margin: 0px auto;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: uppercase; }
+    .navbar-dark .nav-item a {
+      border-bottom: 2px solid transparent;
+      color: #fff !important;
+      padding-right: 15px !important;
+      padding-left: 15px !important; }
+    .navbar-dark .nav-item a:hover {
+      border-bottom: 2px solid #0056b3;
+      color: #000; }
+  .navbar-dark .show .navbar-nav {
+    padding-bottom: 10px; }
+
+/***********************************************************************************************/
+/* NAVIGATION */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* MODALS */
+/***********************************************************************************************/
+.modal-content .modal-header {
+  background: #000; }
+  .modal-content .modal-header h4, .modal-content .modal-header button {
+    color: #fff; }
+
+.modal-content .modal-body {
+  background: #242629; }
+
+/***********************************************************************************************/
+/* MODALS */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* ROWS */
+/***********************************************************************************************/
+.row-header {
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 10px 0px;
+  min-height: 250px; }
+
+.row-content-border {
+  border-bottom: 1px ridge;
+  border-top: 1px ridge; }
+
+/***********************************************************************************************/
+/* ROWS */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* BUTTONS */
+/***********************************************************************************************/
+a.btn-dark-custom {
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  min-width: 125px;
+  padding: 1.1rem 4rem; }
+
+a.btn-dark-custom:hover {
+  background: #0056b3;
+  border: 1px solid #0056b3;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none !important; }
+
+.scrollToTop {
+  background-color: #0056b3;
+  bottom: 51px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  height: 50px;
+  position: fixed;
+  right: 29px;
+  text-align: center;
+  width: 50px;
+  z-index: 1005; }
+  .scrollToTop i {
+    line-height: 50px; }
+
+/***********************************************************************************************/
+/* BUTTONS */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* ELEMENT STYLES */
+/***********************************************************************************************/
+a {
+  color: #fff !important;
+  cursor: pointer !important; }
+
+a:hover {
+  color: #0056b3 !important; }
+
+img {
+  border-radius: 2%;
+  display: block;
+  max-width: 100%; }
+
+/***********************************************************************************************/
+/* ELEMENT STYLES */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* BURGUER ICON */
+/***********************************************************************************************/
+.brgr-box {
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  width: 30px; }
+  .brgr-box .brgr-inner {
+    display: block;
+    margin-top: -2px;
+    top: 50%; }
+  .brgr-box .brgr-inner, .brgr-box .brgr-inner::before, .brgr-box .brgr-inner::after {
+    background-color: #fff;
+    border-radius: 4px;
+    height: 2px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+    width: 30px; }
+  .brgr-box .brgr-inner::before, .brgr-box .brgr-inner::after {
+    content: "";
+    display: block; }
+  .brgr-box .brgr-inner::before {
+    top: -10px; }
+  .brgr-box .brgr-inner::after {
+    bottom: -10px; }
+
+.brgr-action .brgr-inner {
+  top: 2px; }
+
+.brgr-action .brgr-inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s; }
+
+.brgr-action .brgr-inner::after {
+  top: 20px; }
+
+.brgr-action.is-active .brgr-inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg); }
+
+.brgr-action.is-active .brgr-inner::before {
+  opacity: 0;
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0); }
+
+.brgr-action.is-active .brgr-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-90deg); }
+
+/***********************************************************************************************/
+/* BURGUER ICON */
+/***********************************************************************************************/
