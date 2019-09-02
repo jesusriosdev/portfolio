@@ -175,7 +175,7 @@ a.btn-dark-custom {
   border: 1px solid #fff;
   border-radius: 20px;
   font-size: 1.2rem;
-  min-width: 125px;
+  min-width: 155px;
   padding: 1.1rem 4rem; }
 
 a.btn-dark-custom:hover {
@@ -216,6 +216,7 @@ a:hover {
 
 img {
   border-radius: 2%;
+  box-shadow: 0 0 5px #fff;
   display: block;
   max-width: 100%; }
 
