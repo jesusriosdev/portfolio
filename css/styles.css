@@ -29,7 +29,7 @@ body {
 
 .jumbotron {
   margin: 0px auto;
-  padding: 170px 15px;
+  padding: 75px 15px;
   background-image: url("../img/tech4.jpg");
   background-size: cover; }
   .jumbotron .row-header {
@@ -46,7 +46,7 @@ body {
 .aboutme {
   margin: 0px auto;
   padding: 60px 0px 0px 0px;
-  font-size: 1.5rem; }
+  font-size: 1.45rem; }
   .aboutme h1 {
     font-weight: 700; }
   .aboutme p {
@@ -162,7 +162,6 @@ footer {
   min-height: 250px; }
 
 .row-content-border {
-  border-bottom: 1px ridge;
   border-top: 1px ridge; }
 
 /***********************************************************************************************/
