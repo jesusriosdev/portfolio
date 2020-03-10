@@ -1,6 +1,6 @@
 'use strict'; // Use Javascript.
 
-// Declaqre gulp modules.
+// Declare gulp modules.
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
