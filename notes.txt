@@ -5,3 +5,9 @@ cwd: process.versions.node < '8.0.0' ? process.cwd : process.cwd(),
 To this:
 cwd: parseInt(process.versions.node) < 8 ? process.cwd : process.cwd(),
 It's done!
+
+There is another problem when trying to run gulp command for example, error sasys something about:
+cannot be loaded because running scripts is disabled on this system
+
+To solve this, run the next command: 
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted

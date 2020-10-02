@@ -214,7 +214,7 @@ a {
 a:hover {
   color: #0056b3 !important; }
 
-img {
+.portfolio img {
   border-radius: 2%;
   box-shadow: 0 0 5px #fff;
   display: block;
