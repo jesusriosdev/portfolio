@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
     uglify = require('gulp-uglify'),
+    uglifycss = require('gulp-uglifycss'),
     usemin = require('gulp-usemin'),
     rev = require('gulp-rev'),
     cleanCss = require('gulp-clean-css'),
@@ -60,7 +61,7 @@ gulp.task('copyfonts', () => {
 
 // Create task in charge of minify the images indicated and throw them into the destination folder.
 gulp.task('imagemin', () => {
-    return gulp.src('img/*.{png,jpg,gif}')                                          // Gets files from source folder.
+    return gulp.src('img/*.{png,jpg,gif,ico}')                                      // Gets files from source folder.
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true}))   // Applies function to files.
     .pipe(gulp.dest('dist/img'));                                                   // Throws files on destination folder.
 });
@@ -71,7 +72,7 @@ gulp.task('usemin', () => {
     .pipe(flatmap((stream, file) => {                                               // Applies function to files.
         return stream
         .pipe(usemin({
-            css: [rev()],
+            css: [uglifycss(), rev()],
             html: [() => { return htmlmin({ collapseWhitespace: true })}],
             js: [uglify(), rev()],
             inlinejs: [uglify()],
