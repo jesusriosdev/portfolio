@@ -1,5 +1,5 @@
 {
-  "name": "etxcodingcom",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "This is my portfolio.",
   "main": "index.html",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/etxcoding/etxcodingcom.git"
+    "url": "git+https://github.com/jesusriosdev/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/etxcoding/etxcodingcom/issues"
+    "url": "https://github.com/jesusriosdev/portfolio/issues"
   },
-  "homepage": "https://github.com/etxcoding/etxcodingcom#readme",
+  "homepage": "https://github.com/jesusriosdev/portfolio#readme",
   "devDependencies": {
     "copyfiles": "^2.2.0",
     "cssmin": "^0.4.3",

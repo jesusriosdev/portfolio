@@ -253,7 +253,7 @@ footer {
     @include zero-margin(20px, 0px);
 }
 .row-content {
-    @include zero-margin(10px, 0px);
+    @include zero-margin(20px, 0px);
     min-height: 250px;
 }
 .row-content-border {
